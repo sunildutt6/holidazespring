@@ -1,0 +1,10 @@
+services:
+  - type: web
+    name: holidaze-spring-backend
+    env: java
+    buildCommand: ./mvnw clean install
+    startCommand: ./mvnw spring-boot:run
+    plan: free
+    region: frankfurt
+    branch: main
+    autoDeploy: true
